@@ -7,58 +7,58 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/FacultyStaffBtn"
+        android:id="@+id/facultyStaffBtn"
         android:layout_width="180dp"
         android:layout_height="66dp"
         android:background="#0000FF"
         android:text="Faculty"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/CourseBtn"
+        app:layout_constraintBottom_toTopOf="@+id/coursesBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/CourseBtn"
+        android:id="@+id/coursesBtn"
         android:layout_width="180dp"
         android:layout_height="66dp"
         android:layout_marginBottom="60dp"
         android:background="#0000FF"
         android:text="Courses"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/AdmissionBtn"
+        app:layout_constraintBottom_toTopOf="@+id/admissionsBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/AdmissionBtn"
+        android:id="@+id/admissionsBtn"
         android:layout_width="180dp"
         android:layout_height="66dp"
         android:layout_marginBottom="64dp"
         android:background="#0000FF"
         android:text="Admission"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/SocialMediaBtn"
+        app:layout_constraintBottom_toTopOf="@+id/socialMediaBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/SocialMediaBtn"
+        android:id="@+id/socialMediaBtn"
         android:layout_width="180dp"
         android:layout_height="66dp"
         android:layout_marginBottom="52dp"
         android:background="#0000FF"
         android:text="Social Media"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/EmailBtn"
+        app:layout_constraintBottom_toTopOf="@+id/emailBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/EmailBtn"
+        android:id="@+id/emailBtn"
         android:layout_width="180dp"
         android:layout_height="66dp"
         android:layout_marginBottom="104dp"

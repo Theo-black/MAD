@@ -13,31 +13,29 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Click listeners for  buttons
-        var facultyStaffBtn: Button = findViewById(R.id.FacultyStaffBtn)
+        var facultyStaffBtn: Button = findViewById(R.id.facultyStaffBtn)
         facultyStaffBtn.setOnClickListener {
             var intent = Intent(this, FacultyStaffActivity::class.java)
             startActivity(intent)
         }
 
-        var coursesBtn: Button = findViewById(R.id.FacultyStaffBtn)
-        FacultyStaffBtn.setOnClickListener {
-            var intent = Intent(this, FacultyStaffActivity::class.java)
+        var coursesBtn: Button = findViewById(R.id.coursesBtn)
+        coursesBtn.setOnClickListener {
+            var intent = Intent(this, CoursesActivity::class.java)
             startActivity(intent)
         }
 
-        var FacultyStaffBtn: Button = findViewById(R.id.FacultyStaffBtn)
-        FacultyStaffBtn.setOnClickListener {
-            var intent = Intent(this, FacultyStaffActivity::class.java)
+        var admissionsBtn: Button = findViewById(R.id.admissionsBtn)
+        admissionsBtn.setOnClickListener {
+            var intent = Intent(this, AdmissionsActivity::class.java)
             startActivity(intent)
         }
-        var FacultyStaffBtn: Button = findViewById(R.id.FacultyStaffBtn)
-        FacultyStaffBtn.setOnClickListener {
-            var intent = Intent(this, FacultyStaffActivity::class.java)
+        var socialMediaBtn: Button = findViewById(R.id.socialMediaBtn)
+        socialMediaBtn.setOnClickListener {
+            var intent = Intent(this, SocialMediaActivity::class.java)
             startActivity(intent)
         }
         // Click listener for Email FAB button
-        emailFab.setOnClickListener {
 
-        }
     }
 }
