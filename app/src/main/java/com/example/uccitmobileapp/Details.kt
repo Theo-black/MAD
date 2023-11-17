@@ -22,29 +22,29 @@ class Details : AppCompatActivity() {
         //Assigns value to elements according to retrieved index
         when(index){
             "0" -> {
-                name.text = "ROSE, Natalie"
+                name.text = "HENRY, OSBOURNE"
+                email.text = "hosbourne@ucc.edu.jm"
+                photo.setImageResource(R.drawable.henry)
+            }
+            "1" -> {
+                name.text = "NATALIE, ROSE"
                 email.text = "ithod@ucc.edu.jm"
                 photo.setImageResource(R.drawable.rose)
             }
-            "1" -> {
-                name.text = "DAVIDSON, Sonia"
-                email.text = "businessadminhod@ucc.edu.jm"
-                photo.setImageResource(R.drawable.davidson)
-            }
             "2" -> {
-                name.text = "AMONDE, Tom"
-                email.text = "graduatestudiesdirector@ucc.edu.jm"
-                photo.setImageResource(R.drawable.amonde)
+                name.text = "OTIS, OSBOURNE"
+                email.text = "itfaculty@ucc.edu.jm"
+                photo.setImageResource(R.drawable.otis)
             }
             "3" -> {
-                name.text = "MILLER, Ionie"
-                email.text = "appliedpsychologyfaculty@ucc.edu.jm"
-                photo.setImageResource(R.drawable.miller)
+                name.text = "CECIL, WHITE"
+                email.text = "cwhite01@faculty.ucc.edu.jm"
+                photo.setImageResource(R.drawable.white)
             }
             "4" -> {
-                name.text = "NDAJAH, Peter"
-                email.text = "headofschoolsmathit@ucc.edu.jm"
-                photo.setImageResource(R.drawable.ndajah)
+                name.text = "NEIL, WILLIAMS"
+                email.text = "itlecturer@ucc.edu.jm"
+                photo.setImageResource(R.drawable.ucc_logo)
             }
         }
 
