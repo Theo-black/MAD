@@ -1,10 +1,13 @@
 package com.example.uccitmobileapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +39,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         // Click listener for Email FAB button
-
+        val emailBtn: FloatingActionButton = findViewById(R.id.emailBtn)
+        emailBtn.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", mail, null))
+            intent.putExtra(Intent.EXTRA_EMAIL, mail)
+            startActivity(intent)
+        }
     }
 }
