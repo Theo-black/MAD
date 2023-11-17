@@ -15,36 +15,42 @@ class Details : AppCompatActivity() {
         val index: String? = this.intent.getStringExtra("listIndex")
 
         //Creates objects for each activity element
-        val name: TextView = findViewById(R.id.tvName)
-        val email: TextView = findViewById(R.id.tvEmail)
-        val photo: ImageView = findViewById(R.id.ivProfile)
+        val name: TextView = findViewById(R.id.NAME)
+        val email: TextView = findViewById(R.id.EMAIL)
+        val phone: TextView = findViewById(R.id.PHONE)
+        val photo: ImageView = findViewById(R.id.PHOTO)
 
         //Assigns value to elements according to retrieved index
         when(index){
             "0" -> {
                 name.text = "HENRY, OSBOURNE"
                 email.text = "hosbourne@ucc.edu.jm"
+                phone.text = "18769063000"
                 photo.setImageResource(R.drawable.henry)
             }
             "1" -> {
                 name.text = "NATALIE, ROSE"
                 email.text = "ithod@ucc.edu.jm"
+                phone.text = "18768382408"
                 photo.setImageResource(R.drawable.rose)
             }
             "2" -> {
                 name.text = "OTIS, OSBOURNE"
                 email.text = "itfaculty@ucc.edu.jm"
+                phone.text = "18762182935"
                 photo.setImageResource(R.drawable.otis)
             }
             "3" -> {
                 name.text = "CECIL, WHITE"
                 email.text = "cwhite01@faculty.ucc.edu.jm"
+                phone.text = "933102266566"
                 photo.setImageResource(R.drawable.white)
             }
             "4" -> {
                 name.text = "NEIL, WILLIAMS"
                 email.text = "itlecturer@ucc.edu.jm"
-                photo.setImageResource(R.drawable.ucc_logo)
+                phone.text = "18769063000"
+                photo.setImageResource(R.drawable.id)
             }
         }
 
