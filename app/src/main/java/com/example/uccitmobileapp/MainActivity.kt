@@ -5,11 +5,13 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
-
+    private val mail: String = "ucconline@ucc.edu.jm"
+    private val url: String = "https://ucc.edu.jm/apply/"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -38,6 +40,14 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this, SocialMediaActivity::class.java)
             startActivity(intent)
         }
+        //Launches device browser and loads specified URL
+        val admissions: Button = findViewById(R.id.admissionsBtn)
+        admissions.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse(url))
+            startActivity(intent)
+        }
+
         // Click listener for Email FAB button
         val emailBtn: FloatingActionButton = findViewById(R.id.emailBtn)
         emailBtn.setOnClickListener {
