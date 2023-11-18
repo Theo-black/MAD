@@ -1,6 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- res/layout/activity_courses.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CoursesActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- ScrollView to allow scrolling if the content is too large -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Vertical LinearLayout to hold course details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TextViews to display course details -->
+            <TextView
+                android:id="@+id/textCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code: " />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: " />
+
+            <TextView
+                android:id="@+id/textCredits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credits: " />
+
+            <TextView
+                android:id="@+id/textPrerequisites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prerequisites: " />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: " />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

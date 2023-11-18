@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
+    private val mail: String = "ucconline@ucc.edu.jm"
+    private val url: String = "https://ucc.edu.jm/apply/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "37259571539",
+    "firebase_url": "https://ucc-it-mobile-app-default-rtdb.firebaseio.com",
+    "project_id": "ucc-it-mobile-app",
+    "storage_bucket": "ucc-it-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37259571539:android:8ef4088ca7fc94a92af1a6",
+        "android_client_info": {
+          "package_name": "com.example.uccitmobileapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsk7Th8Moa7KmduMe1_SlHajkCqj9n-tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
