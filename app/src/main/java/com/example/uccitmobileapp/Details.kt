@@ -41,15 +41,15 @@ class Details : AppCompatActivity() {
                 photo.setImageResource(R.drawable.otis)
             }
             "3" -> {
-                name.text = "CECIL, WHITE"
-                email.text = "cwhite01@faculty.ucc.edu.jm"
+                name.text = "SAJJAD, RIZVI"
+                email.text = "itfaculty@ucc.edu.jm"
                 phone.text = "933102266566"
-                photo.setImageResource(R.drawable.white)
+                photo.setImageResource(R.drawable.rizvi)
             }
             "4" -> {
-                name.text = "NEIL, WILLIAMS"
-                email.text = "itlecturer@ucc.edu.jm"
-                phone.text = "18769063000"
+                name.text = "CECIL, WHITE"
+                email.text = "cwhite01@faculty.ucc.edu.jm"
+                phone.text = "18764283911"
                 photo.setImageResource(R.drawable.id)
             }
         }
