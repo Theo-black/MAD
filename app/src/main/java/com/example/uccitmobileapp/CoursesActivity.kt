@@ -13,28 +13,29 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.firestore.FirebaseFirestore
 
 class CoursesActivity: AppCompatActivity() {
+
     private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_courses)
 
-        // Assuming you have a Firestore collection named "courses"
-        val coursesCollection = firestore.collection("courses")
+        // Firestore collection named "Courses"
+        val coursesCollection = firestore.collection("Courses")
 
         // Retrieve data from Firestore
         coursesCollection.get()
             .addOnSuccessListener { result ->
                 for (document in result) {
                     // Access the fields of the document
-                    val code = document.getString("code")
-                    val name = document.getString("name")
-                    val credits = document.getLong("credits")
-                    val prerequisites = document.getString("prerequisites")
-                    val description = document.getString("description")
+                    val Code = document.getString("Code")
+                    val Name = document.getString("Name")
+                    val Credits = document.getLong("Credits")
+                    val Prerequisites = document.getString("Prerequisites")
+                    val Description = document.getString("Description")
 
                     // Now, you can use this data to display in your UI
-                    Log.d("CoursesActivity", "Course: $code - $name, Credits: $credits, Prerequisites: $prerequisites, Description: $description")
+                    Log.d("CoursesActivity", "Course: $Code - $Name, Credits: $Credits, Prerequisites: $Prerequisites, Description: $Description")
                 }
             }
             .addOnFailureListener { exception ->

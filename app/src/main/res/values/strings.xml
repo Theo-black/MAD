@@ -2,6 +2,7 @@
     <string name="app_name">UCC IT Mobile App</string>
     <string name="faculty">Faculty</string>
     <string name="view_courses">View Courses</string>
+    <string name="email">Email</string>
 
     <string-array name="Staff">
         <item>HENRY, OSBOURNE</item>
