@@ -1,54 +1,78 @@
-<!-- res/layout/activity_courses.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".CoursesActivity">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
 
-    <!-- ScrollView to allow scrolling if the content is too large -->
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
-        <!-- Vertical LinearLayout to hold course details -->
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!-- Course Code -->
+        <TextView
+            android:id="@+id/textCode"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginStart="8dp"
+            android:text="Code: "
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- TextViews to display course details -->
-            <TextView
-                android:id="@+id/textCode"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Code: " />
+        <!-- Course Name -->
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Name: "
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textCode" />
 
-            <TextView
-                android:id="@+id/textName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name: " />
+        <!-- Credits -->
+        <TextView
+            android:id="@+id/textCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Credits: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textName" />
 
-            <TextView
-                android:id="@+id/textCredits"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Credits: " />
+        <!-- Prerequisites -->
+        <TextView
+            android:id="@+id/textPrerequisite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Prerequisites: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textCredits" />
 
-            <TextView
-                android:id="@+id/textPrerequisites"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Prerequisites: " />
+        <!-- Course Description -->
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Description: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textPrerequisite" />
 
-            <TextView
-                android:id="@+id/textDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description: " />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</androidx.cardview.widget.CardView>
