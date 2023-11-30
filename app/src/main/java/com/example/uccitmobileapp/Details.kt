@@ -47,10 +47,10 @@ class Details : AppCompatActivity() {
                 photo.setImageResource(R.drawable.rizvi)
             }
             "4" -> {
-                name.text = "CECIL, WHITE"
-                email.text = "cwhite01@faculty.ucc.edu.jm"
-                phone.text = "18764283911"
-                photo.setImageResource(R.drawable.id)
+                name.text = "NEIL, WILLIAMS"
+                email.text = "itlecturer@ucc.edu.jm"
+                phone.text = "1876906-3000"
+                photo.setImageResource(R.drawable.williams)
             }
         }
 
