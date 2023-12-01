@@ -11,7 +11,7 @@ class Details : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
 
-        //Gets value sent from Directory activity
+        //Gets value sent from Faculty activity
         val index: String? = this.intent.getStringExtra("listIndex")
 
         //Creates objects for each activity element
