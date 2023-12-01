@@ -10,9 +10,9 @@
         android:layout_width="390dp"
         android:layout_height="119dp"
         android:text="To be unconditionally admitted to complete UCC undergraduate programmes,
-Individuals should possess a minimum of five (5) subjects at the GCE or CSEC level at grades A, B, C or 1, 2, 3 respectively.
+individuals should possess a minimum of five (5) subjects at the GCE or CSEC level at grades A, B, C or 1, 2, 3 respectively.
 CSEC pass at level 3 must have been obtained since 1998.
-candidates who have a minimum of 4 CXC's can also apply pending the outstanding CXC subjects or can opt to do UCC replacement courses Core Mathematics, English for Academic Purpose and Fundamentals of Accounting I."
+Candidates who have a minimum of 4 CXC's can also apply pending the outstanding CXC subjects or can opt to do UCC replacement courses: Core Mathematics, English for Academic Purpose and Fundamentals of Accounting I."
         android:textSize="12dp"
         app:layout_constraintBottom_toTopOf="@+id/wvAdmission"
         app:layout_constraintEnd_toEndOf="parent"

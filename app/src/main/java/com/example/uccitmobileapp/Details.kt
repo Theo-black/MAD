@@ -60,5 +60,9 @@ class Details : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_EMAIL, email.toString())
             startActivity(intent)
         }
+        phone.setOnClickListener {
+            val dialIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${phone.text}"))
+            startActivity(dialIntent)
+        }
     }
 }
